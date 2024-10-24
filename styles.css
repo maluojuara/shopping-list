@@ -87,6 +87,7 @@ p {
     font-size: 18px;
     line-height: 24px;
     border: none;
+    cursor: pointer;
 }
 
 form {
@@ -114,4 +115,41 @@ ul {
 .item-list-date {
     font-size: 12px;
     line-height: 20px;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    background-color: var(--neutral);
+    border: 1px solid var(--black);
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.checked {
+    background-color: var(--black);
+    position: relative;
+}
+
+.checked::after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: -10%;
+    width: 5px;
+    height: 14px;
+
+    border-top: 2px solid var(--neutral);
+    border-left: 2px solid var(--neutral);
+    transform: rotate(-140deg);
+}
+
+.button-action {
+    background-color: transparent;
+    border: none;
 }
