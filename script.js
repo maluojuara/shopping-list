@@ -1,18 +1,21 @@
 const item = document.getElementById("input-item");
 const buttonAddItem = document.getElementById("add-button");
 const shoppingList = document.getElementById("shopping-list");
+const boughtItemsList = document.getElementById("bought-items-list");
 let count = 0;
 
 buttonAddItem.addEventListener("click", addItem);
 
 function addItem(event) {
+    // Impede recarregamento da página - porque é um formulário
     event.preventDefault();
     
+    // Cria tags do novo elemento criado e atribui as classes (de acordo com o HTML já criado)
     const itemList = document.createElement("li");
     const containerItemList = document.createElement("div");
     containerItemList.classList.add("item-list-container");
-
     const containerItemName = document.createElement("div");
+    containerItemName.classList.add("container-name");
 
     const containerCheckbox = document.createElement("div");
     containerCheckbox.classList.add("checkbox-container");
@@ -28,11 +31,16 @@ function addItem(event) {
     checkboxLabel.addEventListener("click", function(event) {
         const checkboxInput = event.currentTarget.querySelector(".checkbox-input");
         const customCheckbox = event.currentTarget.querySelector(".checkbox-custom");
+        const itemName = event.currentTarget.closest("li").querySelector("#item-name");
 
         if (checkboxInput.checked) {
             customCheckbox.classList.add("checked");
+            itemName.style.textDecoration = "line-through";
+            boughtItemsList.appendChild(itemList);
         } else {
             customCheckbox.classList.remove("checked");
+            itemName.style.textDecoration = "none";
+            shoppingList.appendChild(itemList);
         }
     })
     
@@ -46,7 +54,8 @@ function addItem(event) {
     containerItemName.appendChild(containerCheckbox);
 
     const itemName = document.createElement("p");
-    itemName.innerText = item.value;
+    itemName.id = "item-name";
+    itemName.innerHTML = item.value;
     containerItemName.appendChild(itemName);
 
     const containerButtons = document.createElement("div");
@@ -72,6 +81,23 @@ function addItem(event) {
 
     containerItemList.appendChild(containerItemName);
     containerItemList.appendChild(containerButtons);
+
+    const itemDate = document.createElement("p");
+    itemDate.innerText = `${new Date().toLocaleDateString("pt-BR", {weekday: "long"})}`;
+
     itemList.appendChild(containerItemList);
     shoppingList.appendChild(itemList);
 }
+
+
+
+// checkboxLabel.addEventListener("click", function(event) {
+//     const checkboxInput = event.currentTarget.querySelector(".checkbox-input");
+//     const customCheckbox = event.currentTarget.querySelector(".checkbox-custom");
+
+//     if (checkboxInput.checked) {
+//         customCheckbox.classList.add("checked");
+//     } else {
+//         customCheckbox.classList.remove("checked");
+//     }
+// })
