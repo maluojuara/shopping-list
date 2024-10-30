@@ -1,5 +1,10 @@
+import { deleteItem } from "./deleteItem.js";
+import { editItem } from "./editItem.js";
+import { createDate } from "./createDate.js";
+
 const boughtItemsList = document.getElementById("bought-items-list");
 let count = 0;
+const shoppingList = document.getElementById("shopping-list");
 
 export function createItem(item) {
     const itemList = document.createElement("li");
@@ -58,6 +63,10 @@ export function createItem(item) {
     deleteImg.src = "img/delete.svg";
     deleteImg.alt = "Delete item";
 
+    deleteButton.addEventListener("click", function() {
+        deleteItem(itemList);
+    })
+
     deleteButton.appendChild(deleteImg);
     containerButtons.appendChild(deleteButton);
 
@@ -68,16 +77,17 @@ export function createItem(item) {
     editImg.src = "img/edit.svg";
     editImg.alt = "Edit item";
 
+    editButton.addEventListener("click", function() {
+        editItem(itemList);
+    })
+
     editButton.appendChild(editImg);
     containerButtons.appendChild(editButton);
 
     containerItemList.appendChild(containerItemName);
     containerItemList.appendChild(containerButtons);
 
-    const itemDate = document.createElement("p");
-    itemDate.innerText = `${new Date().toLocaleDateString("en-US", { weekday: "long"})} (${new Date().toLocaleDateString()}) at ${new Date().toLocaleTimeString("en-US", { hour12: true, hour: 'numeric', minute: 'numeric'})}`;
-
-    itemDate.classList.add("item-list-date");
+    const itemDate = createDate();
 
     itemList.appendChild(containerItemList);
     itemList.appendChild(itemDate);
