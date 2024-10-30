@@ -57,6 +57,4 @@ https://github.com/user-attachments/assets/1b9d5a45-0d91-4dfb-9b78-24b05415abcf
 
 ## 🚀  Deploy
 
-https://maluojuara.github.io/shopping-list 
-
-
+<a href="https://maluojuara.github.io/shopping-list " target="_blank">Shopping List</a>
