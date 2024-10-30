@@ -1,34 +1,62 @@
+[![Stars](https://img.shields.io/github/stars/maluojuara/shopping-list?color=ffff00&label=Stars&logo=Stars&style=?style=flat)](https://github.com/maluojuara/shopping-list)
+[![Size](https://img.shields.io/github/repo-size/maluojuara/shopping-list?color=blue&label=Size&logo=Size&style=?style=flat)]([https://github.com/maluojuara/shopping-list](https://github.com/maluojuara/shopping-list))
+[![Activity](https://img.shields.io/github/last-commit/maluojuara/shopping-list?color=red&label=Last%20Commit&style=flat)](https://github.com/maluojuara/shopping-list)
 
-![Descricao da sua imagem](https://imgur.com/C8TfWXc.png)
 
-# Titulo do projeto
+<h1>
+    <a href="https://cursos.alura.com.br/course/javascript-construindo-paginas-dinamicas">
+      <img align="center" width="37px" src="https://yt3.googleusercontent.com/W7GokEE6ydjZFa_Tpz6yvSsDlVPTe7d4yTsJqKXy1Gbhu1BGXCfKJ_I-_TzOq37m8R9S97kQ=s900-c-k-c0x00ffffff-no-rj"></a>
+ 
+ <span> Shopping List - Course "JavaScript: Building Dynamic Pages" - Alura </span>
+</h1>
 
-Aplicação web de lista de compras para o curso de construção de páginas dinâmicas com JavaScript.
+<img width="1440" alt="Shopping List" src="https://github.com/user-attachments/assets/f21dab6b-493b-4cf0-807a-b5f0651eaa22">
 
-## 🔨 Funcionalidades do projeto
 
-A aplicação permite inserir itens em uma lista de forma dinâmica, permitindo a exclusão e edição dos mesmos. Os itens terão o nome e também a data e horário que foram criados. Também é possível selecionar um checkbox para informar que o item foi comprado.
+This repository contains the files from the project Shopping List, developed during my learning process at the course "JavaScript: Building Dynamic Pages", from Alura. The course is part of the formation ["Front-end development: courses to create web applications with HTML, CSS and JavaScript"](https://cursos.alura.com.br/formacao-javascript-front-end).
 
-![Inserção no campo de digitação do valor ração de gato, após, é clicado no botão de edição, onde é aberto um popup para digitar o novo do nome item, que foi digitado ração de cachorro. Em seguida, é clicado no botão de exclusão, e o item é excluído.](https://imgur.com/isPj7Xf.gif)
+The objective of the course is to build a shopping list web application using HTML, CSS and JavaScript.
 
-## ✔️ Técnicas e tecnologias utilizadas
+## 🛠️💻  Technologies and tools
 
-As técnicas e tecnologias utilizadas pra isso são:
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3schools.com/html/html_intro.asp)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3schools.com/css/default.asp)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=323330)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-- `HTML`: criação dos elementos da tela;
-- `CSS`: estilização da aplicação;
-- `JavaScript`: construção de elementos dinâmicos através da manipulação do DOM.
+***
 
-## 📁 Acesso ao projeto
+## 📚  Content and features
 
-Você pode [acessar o código fonte do projeto inicial](https://github.com/alura-cursos/3801-javascript-para-web/tree/projeto-base) ou [baixá-lo](https://github.com/alura-cursos/3801-javascript-para-web/archive/refs/heads/projeto-base.zip).
+<div align="left">
 
-## 🛠️ Abrir e rodar o projeto
+| Topic                                                            | Status | 
+| ----------------------------------------------------------------- | ------- | 
+| Building and styling the page with HTML and CSS |✅      
+| Integrating with JavaScript   |✅      
+| Generating dynamic data          |✅     
+| Inserting visual feedback |✅    
+| Interacting with items |✅   
 
-Após baixar o projeto, você pode abrir com o Visual Studio Code. Para isso, no menu superior, clique em:
 
-- **File** > **Open Folder** (ou alguma opção similar)
-- Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
-- Por fim clique em OK
+✨ Practice of HTML and CSS knowledge and integration with JavaScript files;
 
-Ao finalizar esses passos, você pode executar a aplicação com a extensão Live Server 🏆 
+✨ Implementation of functions and dynamic construction of elements in the application;
+
+✨ Detection of user events and use of selectors to identify elements, with organization of functions in separate files;
+
+✨ The application allows you to dynamically insert items into a list, allowing them to be deleted and edited. The items will have the name and also the date and time they were created. You can also select a checkbox to inform that the item has been purchased.
+
+
+***
+
+## 📲  Demonstration
+
+https://github.com/user-attachments/assets/1b9d5a45-0d91-4dfb-9b78-24b05415abcf
+
+***
+
+## 🚀  Deploy
+
+https://maluojuara.github.io/shopping-list 
+
+
